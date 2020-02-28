@@ -82,5 +82,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="838426247034001">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="512351293605597" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="880758722459995" type="ArrayFrases">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

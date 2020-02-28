@@ -25,7 +25,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="931682324023448" type="System">
                             <param id="0" name="Variable">idFrase</param>
-                            <param id="1" name="Value">random(0, 15)</param>
+                            <param id="1" name="Value">int(random(0, 15))</param>
                         </action>
                     </actions>
                 </event-block>
@@ -62,7 +62,7 @@
                         <action id="2" name="Stop" sid="289034603887510" type="BackgroundFrases" />
                         <action id="-9" name="Set value" sid="271310765754267" type="System">
                             <param id="0" name="Variable">idImagem</param>
-                            <param id="1" name="Value">random(0, 4)</param>
+                            <param id="1" name="Value">random(0, 14)</param>
                         </action>
                     </actions>
                 </event-block>
