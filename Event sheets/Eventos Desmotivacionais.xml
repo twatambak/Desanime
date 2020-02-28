@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Desmotivacionais</name>
+    <events>
+        <variable constant="0" name="idImagem" sid="125694944256865" static="0" type="number">0</variable>
+        <variable constant="0" name="idFrase" sid="474585573419369" static="0" type="number">0</variable>
+        <include>Eventos de Inserção das Frases</include>
+        <event-block sid="203729263043713">
+            <conditions>
+                <condition id="3" name="On touched object" sid="897970449285311" type="Touch">
+                    <param id="0" name="Object">Texto1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="913675416040356" type="System" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="600576199506331" title="Configuração do Texto">
+            <sub-events>
+                <event-block sid="243045677033733">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="683317954343450" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="931682324023448" type="System">
+                            <param id="0" name="Variable">idFrase</param>
+                            <param id="1" name="Value">random(0, 4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="598337810453698">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="945292259478527" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="938799589862584" type="Texto1">
+                            <param id="0" name="Family name">&quot;bebas_neueregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;bebas.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="807022922509029">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="375604203485166" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="512525821523426" type="Texto1">
+                            <param id="0" name="Text">ArrayFrases.At(idFrase)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="855014284139703" title="Configuração da Imagem de Fundo">
+            <sub-events>
+                <event-block sid="250597553268023">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="584146323829086" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="289034603887510" type="BackgroundFrases" />
+                        <action id="-9" name="Set value" sid="271310765754267" type="System">
+                            <param id="0" name="Variable">idImagem</param>
+                            <param id="1" name="Value">random(0, 4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="986795505803289">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="842095052696221" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="212599292411700" type="BackgroundFrases">
+                            <param id="0" name="Frame number">idImagem</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

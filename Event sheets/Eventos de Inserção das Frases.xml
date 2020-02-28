@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos de Inserção das Frases</name>
+    <events>
+        <event-group description="" sid="262661527685708" title="Inserção das Frases">
+            <sub-events>
+                <event-block sid="842813963419067">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="832256731114195" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="633186246313341" type="ArrayFrases">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Vai dar tudo certo... menos pra você.&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="525864146897066" type="ArrayFrases">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">&quot;Procrastinar é acreditar no potencial do seu eu do amanhã.&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="325353153144734" type="ArrayFrases">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;Se alguém te ofendeu sem você merecer, volte lá e mereça.&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="417425756560283" type="ArrayFrases">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">&quot;O caminho é longo mas a derrota é certa.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
