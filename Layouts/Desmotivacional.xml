@@ -135,7 +135,7 @@
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
-                        <wrapping>Character</wrapping>
+                        <wrapping>Word</wrapping>
                         <line-height>25</line-height>
                     </properties>
                     <behavior-instances>
